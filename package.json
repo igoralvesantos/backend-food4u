@@ -1,0 +1,36 @@
+{
+  "name": "food4u",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "ts-node-dev -r dotenv/config ./src/index.ts",
+    "start": "tsc && node -r dotenv/config ./build/index.js",
+    "test": "node ./node_modules/jest/bin/jest.js",
+    "build": "rm -rf build && tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^0.20.11",
+    "mysql": "^2.18.1",
+    "ts-node": "^8.6.2",
+    "ts-node-dev": "^1.0.0-pre.44",
+    "typescript": "^3.8.3",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^3.0.0",
+    "@types/cors": "^2.8.6",
+    "@types/express": "^4.17.3",
+    "@types/jsonwebtoken": "^8.3.8",
+    "@types/knex": "^0.16.1",
+    "@types/node": "^13.7.7",
+    "@types/uuid": "^7.0.0"
+  }
+}
